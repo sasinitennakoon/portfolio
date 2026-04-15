@@ -18,6 +18,8 @@ export interface Project {
   cover: string;
   href: string;
   slug: string;
+  projectType: "Case Study" | "Assessment" | "Freelance";
+  
 
   // Meta strip
   role: string;
@@ -53,6 +55,7 @@ export const projects: Project[] = [
     cover: "/front2.jpeg",
     href: "/work/vithursha-blog",
     slug: "vithursha-blog",
+    projectType: "Freelance",
 
     role: "UI/UX Designer & Developer",
     tools: ["Figma", "Notion", "Next.js","Tailwind CSS","Strapi"],
@@ -108,6 +111,7 @@ export const projects: Project[] = [
     cover: "/Shirohana.jpeg",
     href: "/work/shirohana-villa",
     slug: "shirohana-villa",
+    projectType: "Assessment",
 
     role: "UX/UI Designer",
     tools: ["Figma"],
@@ -162,6 +166,7 @@ export const projects: Project[] = [
     cover: "/eco.jpeg",
     href: "/work/eco-shopper-redesign",
     slug: "eco-shopper-redesign",
+    projectType: "Case Study",
 
     role: "Design Systems Lead",
     tools: ["Figma", "Storybook", "Zeroheight"],
@@ -217,6 +222,7 @@ export const projects: Project[] = [
     cover: "/event.jpeg",
     href: "/work/event-desk",
     slug: "event-desk",
+    projectType: "Assessment",
 
     role: "UI/UX Designer",
     tools: ["Figma","Miro"],
@@ -272,6 +278,7 @@ export const projects: Project[] = [
     cover: "/dinuka-portfolio.jpeg",
     href: "/work/dinuka-portfolio",
     slug: "dinuka-portfolio",
+    projectType: "Freelance",
 
     role: "UI/UX Designer & Developer",
     tools: ["Figma","Next.js","Tailwind css"],
