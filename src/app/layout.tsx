@@ -18,6 +18,10 @@ const dmSerif = DM_Serif_Display({
 export const metadata: Metadata = {
   title: "Sasini Tennakoon",
   description: "Portfolio of Sasini, a UI/UX designer crafting clear and intuitive digital experiences.",
+  icons: {
+    icon: "/favicon.ico",
+    
+  },
 };
 
 export default function RootLayout({
