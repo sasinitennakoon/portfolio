@@ -4,11 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { projects } from "./data";
-import type { Platform } from "./data";
 
 type Filter = "All" | Platform;
 
-const filters: Filter[] = ["All", "Mobile", "Web", "Desktop"];
+export type Platform = "Mobile" | "Web" | "Desktop" | "Web & Mobile";
 
 const platformIcon: Record<Platform, React.ReactNode> = {
   Mobile: (
@@ -29,8 +28,14 @@ const platformIcon: Record<Platform, React.ReactNode> = {
       <path d="M8 21h8M12 17v4" />
     </svg>
   ),
+  "Web & Mobile": (                                          // ← add this
+    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <rect x="5" y="2" width="9" height="14" rx="1.5" />
+      <rect x="14" y="5" width="8" height="11" rx="1.5" />
+    </svg>
+  ),
 };
-
+const filters: Filter[] = ["All", "Mobile", "Web", "Desktop", "Web & Mobile"];
 export default function WorkPage() {
   const [active, setActive] = useState<Filter>("All");
 
