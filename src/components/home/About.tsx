@@ -65,7 +65,7 @@ export default function About() {
           <div className="relative flex justify-center md:justify-start">
             <div className="relative w-72 h-80 rounded-2xl overflow-hidden border border-neutral-100 dark:border-neutral-800 bg-[#EEF4FF] dark:bg-[#023581]/10">
               <Image
-                src="/profile.jpg"
+                src="/about.png"
                 alt="Sasini"
                 fill
                 className="object-cover"
@@ -91,7 +91,7 @@ export default function About() {
               I specialize in translating complex problems into clear, structured, and intuitive interfaces that balance both user needs and business goals.
             </p>
             <p className="text-base md:text-lg text-neutral-500 dark:text-neutral-400 leading-relaxed mb-6">
-              I have experience designing for both web and mobile platforms, applying design thinking alongside practical implementation. My approach is rooted in usability, consistency, and attention to detail—ensuring that every interaction feels purposeful and seamless.
+              I have experience designing for both web and mobile platforms, applying design thinking alongside practical implementation. My approach is rooted in usability, consistency, and attention to detail ensuring that every interaction feels purposeful and seamless.
             </p>
             <p className="text-base md:text-lg text-neutral-500 dark:text-neutral-400 leading-relaxed">
               Alongside my academic background in Information Systems at the{" "}

@@ -146,9 +146,9 @@ export default async function ProjectPage({ params }: Props) {
         </div>
 
         {/* ── Cover image ─────────────────────────────────── */}
-        {project.cover ? (
+        {project.pageCover ? (
           <div className="relative w-full h-72 sm:h-[440px] rounded-2xl overflow-hidden bg-[#EEF4FF] dark:bg-[#023581]/10 mb-10 border border-neutral-100 dark:border-neutral-800">
-            <Image src={project.cover} alt={project.title} fill className="object-cover" priority />
+            <Image src={project.pageCover} alt={project.title} fill className="object-cover" priority />
           </div>
         ) : (
           <div className="w-full h-72 sm:h-[440px] rounded-2xl bg-[#EEF4FF] dark:bg-[#023581]/10 mb-10 border border-neutral-100 dark:border-neutral-800 flex items-center justify-center">

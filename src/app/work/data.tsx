@@ -16,6 +16,7 @@ export interface Project {
   platform: Platform;
   year: string;
   cover: string;
+  pageCover: string;
   href: string;
   slug: string;
   projectType: "Case Study" | "Assessment" | "Freelance";
@@ -53,6 +54,7 @@ export const projects: Project[] = [
     platform: "Web",
     year: "2025",
     cover: "/front2.jpeg",
+    pageCover: "/vithursha/cover.jpeg",
     href: "/work/vithursha-blog",
     slug: "vithursha-blog",
     projectType: "Freelance",
@@ -109,6 +111,7 @@ export const projects: Project[] = [
     platform: "Web & Mobile",
     year: "2025",
     cover: "/Shirohana.jpeg",
+    pageCover: "/shirohana/cover.jpeg",
     href: "/work/shirohana-villa",
     slug: "shirohana-villa",
     projectType: "Assessment",
@@ -164,6 +167,7 @@ export const projects: Project[] = [
     platform: "Mobile",
     year: "2026",
     cover: "/eco.jpeg",
+    pageCover: "/eco/cover.jpg",
     href: "/work/eco-shopper-redesign",
     slug: "eco-shopper-redesign",
     projectType: "Case Study",
@@ -220,6 +224,7 @@ export const projects: Project[] = [
     platform: "Web",
     year: "2025",
     cover: "/event.jpeg",
+    pageCover: "/event/cover.jpg",
     href: "/work/event-desk",
     slug: "event-desk",
     projectType: "Assessment",
@@ -276,6 +281,7 @@ export const projects: Project[] = [
     platform: "Web",
     year: "2025",
     cover: "/dinuka-portfolio.jpeg",
+    pageCover: "/dinuka/cover.jpeg",
     href: "/work/dinuka-portfolio",
     slug: "dinuka-portfolio",
     projectType: "Freelance",

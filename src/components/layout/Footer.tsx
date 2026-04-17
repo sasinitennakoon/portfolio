@@ -37,7 +37,7 @@ export default function Footer() {
               <Image src="/sasini tennakoon w.png" alt="Sasini Tennakoon" width={160} height={50} className="object-contain" />
             </Link>
             <p className="text-sm text-white/60 leading-relaxed">
-              UX Designer crafting clean, human-centered digital experiences. Based in Colombo, Sri Lanka.
+              UI/UX Designer crafting clean, human-centered digital experiences. Based in Colombo, Sri Lanka.
             </p>
             <div className="flex items-center gap-2 mt-4">
               <span className="relative flex h-2 w-2">
@@ -63,7 +63,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <p className="text-[11px] font-medium tracking-widest uppercase text-white/40 mb-4">Get in touch</p>
-            <a href="mailto:hello@sasinitennakoon.com" className={linkCls}>hello@sasinitennakoon.com</a>
+            <a href="mailto:hello@sasinitennakoon.com" className={linkCls}>tennakoonsasi5@gmail.com</a>
             <a href="tel:+94771234567" className={`${linkCls} mt-1`}>+94 77 123 4567</a>
             <div className="mt-5">
               <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener noreferrer" className={liBtnCls}>
@@ -72,7 +72,7 @@ export default function Footer() {
                   <circle cx="4" cy="4" r="2" />
                   <path d="M9 9h4v1.5C13.5 9.5 15 9 16.5 9 19.5 9 22 11 22 14.5V21h-4v-6c0-1.5-.5-2.5-2-2.5S14 13.5 14 15v6H9V9z" />
                 </svg>
-                <span className="text-sm font-medium">LinkedIn</span>
+                
               </a>
             </div>
           </div>
