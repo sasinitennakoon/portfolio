@@ -58,7 +58,7 @@ export default function Hero() {
               View Work
             </Link>
             <a
-              href="/resume.pdf"
+              href="/TMSS Tennakoon.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-full border border-[#023581] dark:border-[#4d7fd4] text-[#023581] dark:text-[#4d7fd4] text-sm font-medium hover:bg-[#EEF4FF] dark:hover:bg-[#023581]/20 transition-colors"

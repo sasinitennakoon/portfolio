@@ -50,7 +50,7 @@ export default function Navbar() {
 
           {/* Resume CTA */}
           <a
-            href="/resume.pdf"
+            href="/TMSS Tennakoon.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#023581] dark:bg-neutral-100 text-white dark:text-neutral-900 text-sm font-medium hover:opacity-75 transition-opacity"
@@ -143,7 +143,7 @@ export default function Navbar() {
           ))}
           {/* Resume in mobile menu too */}
           <a
-            href="/resume.pdf"
+            href="/TMSS Tennakoon.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm font-medium text-neutral-900 dark:text-neutral-100"
