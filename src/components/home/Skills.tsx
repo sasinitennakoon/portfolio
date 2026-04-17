@@ -9,11 +9,11 @@ const tools = [
   },
   {
     name: "Illustrator",
-    logo: <img src="/icons/illustrator.svg" className="w-7 h-7" />,
+    logo: <img src="/icons/ai.png" className="w-7 h-7" />,
   },
   {
     name: "Photoshop",
-    logo: <img src="/icons/photoshop.svg" className="w-7 h-7" />,
+    logo: <img src="/icons/ps.png" className="w-7 h-7" />,
   },
   {
     name: "Notion",

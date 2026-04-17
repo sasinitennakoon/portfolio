@@ -83,7 +83,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/40">&copy; {new Date().getFullYear()} Sasini Tennakoon. All rights reserved.</p>
-          <p className="text-xs text-white/40">Designed &amp; built with care</p>
+          
         </div>
 
       </div>
