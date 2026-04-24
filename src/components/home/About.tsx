@@ -11,7 +11,7 @@ const experience = [
   {
     role: "Intern - UI/UX Designer",
     company: "Konekt Holdings",
-    period: "2025 Nov — Present",
+    period: "2025 Nov — 2026 April",
     type: "Internship",
     description:
       "Designed and improved user interfaces for web and mobile platforms, including a corporate website and an international school system in Sri Lanka. Contributed to UI revamps by enhancing usability, visual consistency, and overall user experience.",

@@ -302,9 +302,9 @@ export default async function ProjectPage({ params }: Props) {
             </h3>
             <RichText content={project.wireframes} />
             {project.wireframeImages.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {project.wireframeImages.map((src, i) => (
-                  <div key={i} className="relative h-56 rounded-xl overflow-hidden border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+              <div className="flex flex-col gap-6">
+  {project.wireframeImages.map((src, i) => (
+    <div key={i} className="relative h-[480px] rounded-xl overflow-hidden border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
                     <Image src={src} alt={`Wireframe ${i + 1}`} fill className="object-cover" />
                   </div>
                 ))}
@@ -320,9 +320,9 @@ export default async function ProjectPage({ params }: Props) {
             <RichText content={project.uiDesign} className="mb-6" />
 
             {project.uiImages.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {project.uiImages.map((src, i) => (
-                  <div key={i} className="relative h-56 rounded-xl overflow-hidden border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+              <div className="flex flex-col gap-6">
+  {project.uiImages.map((src, i) => (
+    <div key={i} className="relative h-[480px] rounded-xl overflow-hidden border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
                     <Image src={src} alt={`UI Design ${i + 1}`} fill className="object-cover" />
                   </div>
                 ))}

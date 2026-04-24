@@ -157,7 +157,7 @@ export const projects: Project[] = [
       " The final design delivers a visually engaging and structured homepage that effectively showcases the villa while guiding users toward key actions such as booking and inquiries.",
 
     wireframeImages: ["/projects/ecom-wire-1.jpg", "/projects/ecom-wire-2.jpg"],
-    uiImages: ["/projects/ecom-ui-1.jpg", "/projects/ecom-ui-2.jpg"],
+    uiImages: ["/shirohana/shirohana.jpg", "/shirohana/shirohana 2.jpg"],
   },
   {
     title: "Eco Shopper – Mobile App Redesign",
@@ -214,7 +214,7 @@ export const projects: Project[] = [
       "The redesigned version provides a more intuitive and visually consistent experience, improving usability and making it easier for users to navigate and interact with the app.",
 
     wireframeImages: ["/projects/saas-wire-1.jpg", "/projects/saas-wire-2.jpg"],
-    uiImages: ["/projects/saas-ui-1.jpg", "/projects/saas-ui-2.jpg"],
+    uiImages: ["/eco/Eco Shopper.jpg", "/eco/Eco Shopper copy.jpg"],
   },
   {
     title: "Event Desk",
@@ -271,7 +271,7 @@ export const projects: Project[] = [
       "The final design provides a structured and user-friendly platform that simplifies event booking and management, making it easier for users to organize and manage events efficiently.",
 
     wireframeImages: ["/projects/banking-wire-1.jpg", "/projects/banking-wire-2.jpg"],
-    uiImages: ["/projects/banking-ui-1.jpg", "/projects/banking-ui-2.jpg"],
+    uiImages: ["/event/Event desk.jpg", "/event/Event desk 2.jpg"],
   },
   {
     title: "Dinuka Gunawardane Portfolio",
@@ -329,6 +329,6 @@ export const projects: Project[] = [
       "The final design delivers a professional and visually engaging portfolio that effectively showcases work and helps users quickly understand the designer’s skills and experience.",
 
     wireframeImages: ["/projects/banking-wire-1.jpg", "/projects/banking-wire-2.jpg"],
-    uiImages: ["/projects/banking-ui-1.jpg", "/projects/banking-ui-2.jpg"],
+    uiImages: ["/dinuka/Dinuka.jpg", "/dinuka/Dinuka 2.jpg"],
   },
 ];
