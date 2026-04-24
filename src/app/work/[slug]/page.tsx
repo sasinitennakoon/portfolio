@@ -296,21 +296,26 @@ export default async function ProjectPage({ params }: Props) {
           </section>
 
           {/* Wireframes */}
-          <section>
-            <h3 className="text-2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-3">
-              Wireframes
-            </h3>
-            <RichText content={project.wireframes} />
-            {project.wireframeImages.length > 0 && (
-              <div className="flex flex-col gap-6">
-  {project.wireframeImages.map((src, i) => (
-    <div key={i} className="relative h-[480px] rounded-xl overflow-hidden border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
-                    <Image src={src} alt={`Wireframe ${i + 1}`} fill className="object-cover" />
-                  </div>
-                ))}
-              </div>
-            )}
-          </section>
+            
+            {/* Wireframes — only shown if the project has wireframe content */}
+              {(project.wireframes || project.wireframeImages?.length > 0) && (
+                <section>
+                  <h3 className="text-2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-3">
+                    Wireframes
+                  </h3>
+                  {project.wireframes && <RichText content={project.wireframes} />}
+                  {project.wireframeImages?.length > 0 && (
+                    <div className="flex flex-col gap-6">
+                      {project.wireframeImages.map((src, i) => (
+                        <div key={i} className="relative h-[480px] rounded-xl overflow-hidden border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                          <Image src={src} alt={`Wireframe ${i + 1}`} fill className="object-cover" />
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </section>
+              )}
+
 
           {/* UI Design */}
           <section>

@@ -100,8 +100,8 @@ export const projects: Project[] = [
     outcome:
       "The final design delivers a clean and structured blogging experience, improving readability and making it easier for users to navigate and engage with content.",
 
-    wireframeImages: ["/projects/banking-wire-1.jpg", "/projects/banking-wire-2.jpg"],
-    uiImages: ["/projects/banking-ui-1.jpg", "/projects/banking-ui-2.jpg"],
+    wireframeImages: ["/vithursha/wireframe.jpg"],
+    uiImages: ["/vithursha/vithursha.jpeg", "/vithursha/vithursha copy.jpeg"],
   },
   {
     title: "Shirohana Villa-Home Page Design",
@@ -148,7 +148,7 @@ export const projects: Project[] = [
       quote: "If I have to create an account just to buy one thing, I'll just go somewhere else.",
     },
     wireframes:
-      " Initial wireframes were created to define layout structure and content hierarchy. The focus was on positioning key sections such as hero, villa details, amenities, and call-to-action areas for optimal user flow.",
+      "",
     uiDesign:
       "<p>The final UI emphasizes elegance, clarity, and usability. A clean layout, balanced spacing, and consistent typography were used to create a premium feel aligned with the villa’s branding.</p>",
     designDecision:
@@ -156,7 +156,7 @@ export const projects: Project[] = [
     outcome:
       " The final design delivers a visually engaging and structured homepage that effectively showcases the villa while guiding users toward key actions such as booking and inquiries.",
 
-    wireframeImages: ["/projects/ecom-wire-1.jpg", "/projects/ecom-wire-2.jpg"],
+    wireframeImages: [],
     uiImages: ["/shirohana/shirohana.jpg", "/shirohana/shirohana 2.jpg"],
   },
   {
@@ -205,7 +205,7 @@ export const projects: Project[] = [
         "I want to shop eco-friendly products easily without spending too much time figuring things out.",
     },
     wireframes:
-      "Low-fidelity wireframes were created to analyze and restructure the original design. The focus was on improving navigation, simplifying layouts, and creating a clearer user flow for browsing and purchasing products.",
+      "",
     uiDesign:
       "The updated UI focuses on simplicity, clarity, and consistency. A structured layout and improved spacing were used to enhance readability, while consistent components create a cohesive user experience",
     designDecision:
@@ -213,7 +213,7 @@ export const projects: Project[] = [
     outcome:
       "The redesigned version provides a more intuitive and visually consistent experience, improving usability and making it easier for users to navigate and interact with the app.",
 
-    wireframeImages: ["/projects/saas-wire-1.jpg", "/projects/saas-wire-2.jpg"],
+    wireframeImages: [],
     uiImages: ["/eco/Eco Shopper.jpg", "/eco/Eco Shopper copy.jpg"],
   },
   {
@@ -270,7 +270,7 @@ export const projects: Project[] = [
     outcome:
       "The final design provides a structured and user-friendly platform that simplifies event booking and management, making it easier for users to organize and manage events efficiently.",
 
-    wireframeImages: ["/projects/banking-wire-1.jpg", "/projects/banking-wire-2.jpg"],
+    wireframeImages: ["/event/wireframe1.jpeg", "/event/wireframe2.jpeg"],
     uiImages: ["/event/Event desk.jpg", "/event/Event desk 2.jpg"],
   },
   {
@@ -328,7 +328,7 @@ export const projects: Project[] = [
     outcome:
       "The final design delivers a professional and visually engaging portfolio that effectively showcases work and helps users quickly understand the designer’s skills and experience.",
 
-    wireframeImages: ["/projects/banking-wire-1.jpg", "/projects/banking-wire-2.jpg"],
+    wireframeImages: ["/dinuka/wireframe.jpg"],
     uiImages: ["/dinuka/Dinuka.jpg", "/dinuka/Dinuka 2.jpg"],
   },
 ];
