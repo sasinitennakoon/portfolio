@@ -16,6 +16,16 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Imagic Creation - Production House Website Design",
+    description: "A high-impact production house website designed and developed to showcase cinematic work, strengthen brand identity, and convert visitors into potential clients through a visually immersive experience.",
+    tags: ["UI Design", "Under Development"],
+    platform: "Web",
+    year: "2026",
+    cover: "/imagic.jpg",
+    href: "/work/imagic-creation",
+    projectType: "Freelance",
+  },
+  {
     title: "Vithursha Kamaleswaran-Personal Blog Publishing Site",
     description: "A content-focused blog platform designed to deliver a clean reading experience with strong visual hierarchy and easy navigation.",
     tags: ["UX Research", "UI Design"],
@@ -34,16 +44,6 @@ const projects: Project[] = [
     cover: "/Shirohana.jpeg",
     href: "/work/shirohana-villa",
     projectType: "Assessment",
-  },
-  {
-    title: "Eco Shopper – Mobile App Redesign",
-    description: "A redesign of an e-commerce mobile app focused on improving usability, visual consistency, and overall user experience.",
-    tags: ["Design Systems", "UI Design"],
-    platform: "Mobile",
-    year: "2023",
-    cover: "/eco.jpeg",
-    href: "/work/eco-shopper-redesign",
-    projectType: "Case Study",
   },
 ];
 

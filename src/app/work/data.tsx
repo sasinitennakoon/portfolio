@@ -55,7 +55,7 @@ export const projects: Project[] = [
     year: "2026",
     cover: "/imagic.jpg",
     pageCover: "/imagic/cover.jpg",
-    href: "/work/imagic",
+    href: "/work/imagic-creation",
     slug: "imagic-creation",
     projectType: "Freelance",
 
