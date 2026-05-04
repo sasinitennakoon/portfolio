@@ -34,7 +34,7 @@ export interface Project {
   goal: string;
   research: string;
   targetUsers: string;
-  userPersona: UserPersona;
+  userPersona?: UserPersona;
   wireframes: string;
   uiDesign: string;
   designDecision: string;
@@ -46,6 +46,47 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    title: "Imagic Creation - Production House Website Design",
+    description:
+      "A high-impact production house website designed and developed to showcase cinematic work, strengthen brand identity, and convert visitors into potential clients through a visually immersive experience.",
+    tags: ["UX Research", "UI Design","Development"],
+    platform: "Web",
+    year: "2026",
+    cover: "/imagic.jpg",
+    pageCover: "/imagic/cover.jpg",
+    href: "/work/imagic",
+    slug: "imagic-creation",
+    projectType: "Freelance",
+
+    role: "UI/UX Designer & Developer",
+    tools: ["Figma", "Next.js","Tailwind CSS","Strapi"],
+    figmaLink: "https://www.figma.com/design/djxCjiSmS5JA2t3a8pu3TK/IMAGIC-Website?node-id=0-1&t=zj0pmyhX1KRbn2IN-1",
+    liveLink: "",
+
+    introduction:
+      "Imagic Creation is a growing production house specializing in videography, photography, and visual storytelling. As a creative brand, their work is highly visual, yet they lacked a strong digital platform to effectively showcase their capabilities.<br>This project involved end-to-end design and development of a modern portfolio website that reflects the brand’s cinematic style while ensuring a seamless and engaging user experience.<br>The focus was not only on aesthetics, but also on building a scalable and manageable system using a headless CMS, allowing the client to easily update and maintain their content.",
+    problem:
+      "Despite producing high-quality creative work, Imagic Creation faced several challenges:<br><ul><li>No strong online presence to showcase their portfolio</li><li>Difficulty in communicating services and expertise clearly</li><li>Lack of a structured system to manage and update projects</li><li>Missed opportunities in converting visitors into clients</li><ul><p>Additionally, many production websites either:</p><ul><li>Focus too much on visuals but ignore usability</li><li>Or are overly complex and difficult to manage</li></ul><p>This created a need for a solution that balances visual storytelling, usability, and maintainability.</p>",
+    goal:
+      "<p>TThe goal of this project was to:<p><ul><li>Create a visually striking website that reflects the brand’s identity</li><li>Design a portfolio-first experience to highlight projects effectively</li><li>Ensure smooth navigation and clear content structure</li><li>Enable non-technical content management through CMS</li><li>Build a fully responsive and high-performance website</li><li>Encourage user engagement and client inquiries</li></ul>",
+    research:
+      "<p>To understand industry standards, I analyzed production house websites and creative agency portfolios.</p><br><p><b>Key Observations</b></p><ul><li>Strong first impressions are driven by hero visuals and motion</li><li>Users prefer quick access to portfolio content</li><li>Minimal text with clear storytelling works best</li><li>Poor navigation often leads to high drop-off rates</li></ul><br><p><b>Insights</b></p><ul><li>Visual hierarchy is critical in creative websitesPerformance matters (heavy media can slow down experience)</li><li>Visual hierarchy is critical in creative websites</li><li>Performance matters (heavy media can slow down experience)</li><li>Users scan quickly → content must be structured and digestible</li><li>Trust is built through presentation quality and consistency</li></ul><br><p>These insights guided the design toward a clean, cinematic, and user-focused experience.</p>",
+    targetUsers:
+      "<ul><li>Individuals looking for event coverage (weddings, personal shoots)</li><li>Brands and businesses seeking commercial production</li><li>Agencies looking for creative collaboration</li></ul>",
+    
+    wireframes:
+      "Low-fidelity wireframes were created to define:<ul><li>Homepage structure with strong visual hierarchy</li><li>Portfolio layout for easy browsing</li><li>Service presentation sections</li></ul><br><p>This stage helped validate layout decisions before moving into high-fidelity design</p>",
+    uiDesign:
+      "<p><b>Design Direction</b></p>A <b>dark, cinematic theme</b> was chosen to enhance visual content and create a premium feel.</p><br><p><b>Typography</b></p><ul><li>Clean and modern sans-serif fonts</li><li>Strong hierarchy for readability</li></ul><br><p><b>Layout</b></p><ul><li>Grid-based system for structured content</li><li>Large imagery for maximum impact</li><li>Generous spacing to reduce clutter</li></ul>",
+    designDecision:
+      "<ul><li>Prioritized visual content over heavy text</li><li>Used white space strategically to guide attention</li><li>Designed clear navigation to reduce friction</li><li>Implemented consistent UI patterns for usability</li><li>Optimized layouts for both desktop and mobile experiences</li></ul>",
+    outcome:
+      "<p>The final product is a high-performance, visually engaging website that:</p><ul><li>Showcases Imagic Creation’s work effectively</li><li>Strengthens brand identity</li><li>Improves user engagement</li><li>Provides a seamless browsing experience</li><li>Enables easy content management</li></ul>",
+
+    wireframeImages: ["/imagic/Artboard 1.jpg","/imagic/Artboard 2.jpg"],
+    uiImages: ["/imagic/Imagic.jpg", "/imagic/Imagic 2.jpg"],
+  },
   {
     title: "Vithursha Kamaleswaran-Personal Blog Publishing Site",
     description:

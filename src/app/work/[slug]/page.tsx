@@ -235,65 +235,73 @@ export default async function ProjectPage({ params }: Props) {
           </section>
 
           {/* User Persona Card */}
-          <section>
-            <h3 className="text2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-4">
-              User Persona
-            </h3>
-            <div className="rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-white dark:bg-neutral-900 overflow-hidden">
+          {project.userPersona && (
+            <section>
+              <h3 className="text-2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-4">
+                User Persona
+              </h3>
 
-              {/* Persona header */}
-              <div className="flex items-center gap-4 px-6 py-6 border-b border-neutral-100 dark:border-neutral-800 bg-[#EEF4FF] dark:bg-[#023581]/10">
-                <div className="w-14 h-14 rounded-full bg-[#023581] dark:bg-[#4d7fd4] flex items-center justify-center text-white font-bold text-xl shrink-0">
-                  {project.userPersona.name.charAt(0)}
+              <div className="rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-white dark:bg-neutral-900 overflow-hidden">
+
+                {/* Persona header */}
+                <div className="flex items-center gap-4 px-6 py-6 border-b border-neutral-100 dark:border-neutral-800 bg-[#EEF4FF] dark:bg-[#023581]/10">
+
+                  <div className="w-14 h-14 rounded-full bg-[#023581] dark:bg-[#4d7fd4] flex items-center justify-center text-white font-bold text-xl shrink-0">
+                    {project.userPersona.name.charAt(0)}
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-neutral-900 dark:text-neutral-100 text-base">
+                      {project.userPersona.name}
+                    </p>
+                    <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">
+                      {project.userPersona.age} · {project.userPersona.occupation}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-semibold text-neutral-900 dark:text-neutral-100 text-base">
-                    {project.userPersona.name}
+
+                {/* Quote */}
+                <div className="px-6 py-5 border-b border-neutral-100 dark:border-neutral-800">
+                  <p className="text-base text-neutral-600 dark:text-neutral-400 italic leading-relaxed">
+                    "{project.userPersona.quote}"
                   </p>
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">
-                    {project.userPersona.age} · {project.userPersona.occupation}
-                  </p>
+                </div>
+
+                {/* Goals + Pain Points */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-neutral-100 dark:divide-neutral-800">
+
+                  <div className="px-6 py-6">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-4">
+                      Goals
+                    </p>
+                    <ul className="space-y-3">
+                      {project.userPersona.goals.map((g) => (
+                        <li key={g} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400">
+                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                          {g}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="px-6 py-6">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-rose-500 dark:text-rose-400 mb-4">
+                      Pain Points
+                    </p>
+                    <ul className="space-y-3">
+                      {project.userPersona.painPoints.map((p) => (
+                        <li key={p} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400">
+                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0" />
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
                 </div>
               </div>
-
-              {/* Quote */}
-              <div className="px-6 py-5 border-b border-neutral-100 dark:border-neutral-800">
-                <p className="text-base text-neutral-600 dark:text-neutral-400 italic leading-relaxed">
-                  "{project.userPersona.quote}"
-                </p>
-              </div>
-
-              {/* Goals + Pain Points */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-neutral-100 dark:divide-neutral-800">
-                <div className="px-6 py-6">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-4">
-                    Goals
-                  </p>
-                  <ul className="space-y-3">
-                    {project.userPersona.goals.map((g) => (
-                      <li key={g} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400">
-                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
-                        {g}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="px-6 py-6">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-rose-500 dark:text-rose-400 mb-4">
-                    Pain Points
-                  </p>
-                  <ul className="space-y-3">
-                    {project.userPersona.painPoints.map((p) => (
-                      <li key={p} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400">
-                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0" />
-                        {p}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
+          )}
 
           {/* Wireframes */}
             
