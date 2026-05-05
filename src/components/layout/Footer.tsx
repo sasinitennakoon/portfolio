@@ -63,10 +63,10 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <p className="text-[11px] font-medium tracking-widest uppercase text-white/40 mb-4">Get in touch</p>
-            <a href="mailto:hello@sasinitennakoon.com" className={linkCls}>tennakoonsasi5@gmail.com</a>
-            <a href="tel:+94771234567" className={`${linkCls} mt-1`}>+94 77 123 4567</a>
+            <a href="mailto:tennakoonsasi5@gmail.com" className={linkCls}>tennakoonsasi5@gmail.com</a>
+            <a href="tel:+94728407100" className={`${linkCls} mt-1`}>+94 72 840 7100</a>
             <div className="mt-5">
-              <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener noreferrer" className={liBtnCls}>
+              <a href="www.linkedin.com/in/sasini-tennakoon-97446523b" target="_blank" rel="noopener noreferrer" className={liBtnCls}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                   <rect x="2" y="9" width="4" height="12" rx="1" />
                   <circle cx="4" cy="4" r="2" />
