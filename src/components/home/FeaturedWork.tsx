@@ -40,7 +40,7 @@ const projects: Project[] = [
     description: "A responsive homepage design for a luxury villa, focused on creating a visually engaging and seamless booking experience across web and mobile platforms.",
     tags: ["UX Design", "Usability Testing"],
     platform: "Web & Mobile",
-    year: "2024",
+    year: "2025",
     cover: "/Shirohana.jpeg",
     href: "/work/shirohana-villa",
     projectType: "Assessment",

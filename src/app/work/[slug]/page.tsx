@@ -360,7 +360,19 @@ export default async function ProjectPage({ params }: Props) {
             </h3>
             <RichText content={project.outcome} />
           </section>
+          
+          {/* Learnings / Final Reflection (optional) */}
+          {project.learnings && (
+            <section>
+              <h3 className="text-2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-3">
+                Learnings
+              </h3>
 
+              <div className="border-l-2 border-[#023581] dark:border-[#4d7fd4] pl-5">
+                <RichText content={project.learnings} />
+              </div>
+            </section>
+          )}
         </div>
 
         {/* ── Prev / Next ──────────────────────────────────── */}
