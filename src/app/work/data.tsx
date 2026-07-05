@@ -38,7 +38,11 @@ export interface Project {
   wireframes: string;
   uiDesign: string;
   designDecision: string;
-  outcome: string;
+  outcome: string;beforeAfter?: {
+  label: "Before" | "After";
+  image: string;
+  description: string; // supports HTML like other fields
+}[];
   learnings?: string;
 
   // Images

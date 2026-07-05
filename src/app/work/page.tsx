@@ -4,10 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { projects } from "./data";
+import { graphicProjects } from "./graphics/graphicData";
+import GraphicCard from "./GraphicCard";
 
 type Filter = "All" | Platform;
 
-export type Platform = "Mobile" | "Web" | "Desktop" | "Web & Mobile";
+export type Platform = "Mobile" | "Web" | "Desktop" | "Web & Mobile" | "Graphic Design";
 
 const platformIcon: Record<Platform, React.ReactNode> = {
   Mobile: (
@@ -28,14 +30,21 @@ const platformIcon: Record<Platform, React.ReactNode> = {
       <path d="M8 21h8M12 17v4" />
     </svg>
   ),
-  "Web & Mobile": (                                          // ← add this
+  "Web & Mobile": (
     <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <rect x="5" y="2" width="9" height="14" rx="1.5" />
       <rect x="14" y="5" width="8" height="11" rx="1.5" />
     </svg>
   ),
+  "Graphic Design": (
+    <svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.2 0-.9.7-1.5 1.5-1.5H16a4 4 0 0 0 4-4c0-5.5-4.5-10-8-10Z" />
+      <circle cx="7.5" cy="10.5" r="1" fill="currentColor" stroke="none" />
+      <circle cx="10.5" cy="7" r="1" fill="currentColor" stroke="none" />
+      <circle cx="15" cy="8" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  ),
 };
-
 
 const typeStyles = {
   "Case Study": "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300",
@@ -43,18 +52,34 @@ const typeStyles = {
   "Freelance": "bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-300",
 };
 
-const filters: Filter[] = ["All", "Mobile", "Web", "Web & Mobile"];
+const filters: Filter[] = ["All", "Mobile", "Web", "Web & Mobile", "Graphic Design"];
+
 export default function WorkPage() {
   const [active, setActive] = useState<Filter>("All");
 
-  const filtered =
-    active === "All" ? projects : projects.filter((p) => p.platform === active);
+  const isGraphicFilter = active === "Graphic Design";
 
-     const typeStyles = {
-    "Case Study": "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300",
-    "Assessment": "bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-300",
-    "Freelance": "bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-300",
+  // UI/UX projects to show (empty when viewing Graphic Design only)
+  const filteredUIUX =
+    active === "All"
+      ? projects
+      : isGraphicFilter
+      ? []
+      : projects.filter((p) => p.platform === active);
+
+  // Graphic design projects to show (only on "All" or "Graphic Design")
+  const filteredGraphics =
+    active === "All" || isGraphicFilter ? graphicProjects : [];
+
+  const totalShowing = filteredUIUX.length + filteredGraphics.length;
+
+  // counts per chip
+  const countFor = (f: Filter) => {
+    if (f === "All") return projects.length + graphicProjects.length;
+    if (f === "Graphic Design") return graphicProjects.length;
+    return projects.filter((p) => p.platform === f).length;
   };
+
   return (
     <main className="relative min-h-screen bg-[#f9fafb] dark:bg-neutral-950 overflow-hidden">
 
@@ -83,7 +108,7 @@ export default function WorkPage() {
             All work
           </h1>
           <p className="text-sm text-neutral-400 dark:text-neutral-500 max-w-sm">
-            A collection of projects across mobile, web, and desktop — from research through to final design.
+            A collection of projects across mobile, web, desktop, and graphic design — from research through to final design.
           </p>
         </div>
 
@@ -114,9 +139,7 @@ export default function WorkPage() {
                       : "bg-neutral-100 dark:bg-neutral-800 text-neutral-400 dark:text-neutral-500"
                   }`}
                 >
-                  {f === "All"
-                    ? projects.length
-                    : projects.filter((p) => p.platform === f).length}
+                  {countFor(f)}
                 </span>
               </button>
             );
@@ -125,12 +148,14 @@ export default function WorkPage() {
 
         {/* Project count */}
         <p className="text-xs text-neutral-400 dark:text-neutral-500 mb-6 text-center">
-          Showing {filtered.length} project{filtered.length !== 1 ? "s" : ""}
+          Showing {totalShowing} project{totalShowing !== 1 ? "s" : ""}
         </p>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((project) => (
+
+          {/* UI/UX case study cards */}
+          {filteredUIUX.map((project) => (
             <Link
               key={project.title}
               href={project.href}
@@ -187,10 +212,16 @@ export default function WorkPage() {
               </div>
             </Link>
           ))}
+
+          {/* Graphic design cards */}
+          {filteredGraphics.map((project) => (
+            <GraphicCard key={project.slug} project={project} />
+          ))}
+
         </div>
 
         {/* Empty state */}
-        {filtered.length === 0 && (
+        {totalShowing === 0 && (
           <div className="flex flex-col items-center justify-center py-24 text-center">
             <p className="text-neutral-400 dark:text-neutral-500 text-sm">
               No projects found for this filter.

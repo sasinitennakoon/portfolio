@@ -236,73 +236,66 @@ export default async function ProjectPage({ params }: Props) {
 
           {/* User Persona Card */}
           {project.userPersona && (
-            <section>
-              <h3 className="text-2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-4">
-                User Persona
-              </h3>
+  <section>
+    <h3 className="text2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-4">
+      User Persona
+    </h3>
+    <div className="rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-white dark:bg-neutral-900 overflow-hidden">
 
-              <div className="rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-white dark:bg-neutral-900 overflow-hidden">
+      {/* Persona header */}
+      <div className="flex items-center gap-4 px-6 py-6 border-b border-neutral-100 dark:border-neutral-800 bg-[#EEF4FF] dark:bg-[#023581]/10">
+        <div className="w-14 h-14 rounded-full bg-[#023581] dark:bg-[#4d7fd4] flex items-center justify-center text-white font-bold text-xl shrink-0">
+          {project.userPersona.name.charAt(0)}
+        </div>
+        <div>
+          <p className="font-semibold text-neutral-900 dark:text-neutral-100 text-base">
+            {project.userPersona.name}
+          </p>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">
+            {project.userPersona.age} · {project.userPersona.occupation}
+          </p>
+        </div>
+      </div>
 
-                {/* Persona header */}
-                <div className="flex items-center gap-4 px-6 py-6 border-b border-neutral-100 dark:border-neutral-800 bg-[#EEF4FF] dark:bg-[#023581]/10">
+      {/* Quote */}
+      <div className="px-6 py-5 border-b border-neutral-100 dark:border-neutral-800">
+        <p className="text-base text-neutral-600 dark:text-neutral-400 italic leading-relaxed">
+          "{project.userPersona.quote}"
+        </p>
+      </div>
 
-                  <div className="w-14 h-14 rounded-full bg-[#023581] dark:bg-[#4d7fd4] flex items-center justify-center text-white font-bold text-xl shrink-0">
-                    {project.userPersona.name.charAt(0)}
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-neutral-900 dark:text-neutral-100 text-base">
-                      {project.userPersona.name}
-                    </p>
-                    <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">
-                      {project.userPersona.age} · {project.userPersona.occupation}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Quote */}
-                <div className="px-6 py-5 border-b border-neutral-100 dark:border-neutral-800">
-                  <p className="text-base text-neutral-600 dark:text-neutral-400 italic leading-relaxed">
-                    "{project.userPersona.quote}"
-                  </p>
-                </div>
-
-                {/* Goals + Pain Points */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-neutral-100 dark:divide-neutral-800">
-
-                  <div className="px-6 py-6">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-4">
-                      Goals
-                    </p>
-                    <ul className="space-y-3">
-                      {project.userPersona.goals.map((g) => (
-                        <li key={g} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400">
-                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
-                          {g}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="px-6 py-6">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-rose-500 dark:text-rose-400 mb-4">
-                      Pain Points
-                    </p>
-                    <ul className="space-y-3">
-                      {project.userPersona.painPoints.map((p) => (
-                        <li key={p} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400">
-                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0" />
-                          {p}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-            </section>
-          )}
-
+      {/* Goals + Pain Points */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-neutral-100 dark:divide-neutral-800">
+        <div className="px-6 py-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-4">
+            Goals
+          </p>
+          <ul className="space-y-3">
+            {project.userPersona.goals.map((g) => (
+              <li key={g} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400">
+                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                {g}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="px-6 py-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-rose-500 dark:text-rose-400 mb-4">
+            Pain Points
+          </p>
+          <ul className="space-y-3">
+            {project.userPersona.painPoints.map((p) => (
+              <li key={p} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400">
+                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0" />
+                {p}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
           {/* Wireframes */}
             
             {/* Wireframes — only shown if the project has wireframe content */}
@@ -323,7 +316,26 @@ export default async function ProjectPage({ params }: Props) {
                   )}
                 </section>
               )}
-
+          {project.beforeAfter && project.beforeAfter.length > 0 && (
+            <section>
+              <h3 className="text-2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-6">
+                Before vs After
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {project.beforeAfter.map((item, i) => (
+                  <div key={i} className="flex flex-col gap-3">
+                    <div className="relative h-[360px] rounded-xl overflow-hidden border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                      <Image src={item.image} alt={item.label} fill className="object-cover" />
+                      <span className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full text-white ${item.label === "Before" ? "bg-rose-500" : "bg-emerald-500"}`}>
+                        {item.label}
+                      </span>
+                    </div>
+                    <RichText content={item.description} />
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* UI Design */}
           <section>
@@ -360,19 +372,7 @@ export default async function ProjectPage({ params }: Props) {
             </h3>
             <RichText content={project.outcome} />
           </section>
-          
-          {/* Learnings / Final Reflection (optional) */}
-          {project.learnings && (
-            <section>
-              <h3 className="text-2xl font-semibold tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-3">
-                Learnings
-              </h3>
 
-              <div className="border-l-2 border-[#023581] dark:border-[#4d7fd4] pl-5">
-                <RichText content={project.learnings} />
-              </div>
-            </section>
-          )}
         </div>
 
         {/* ── Prev / Next ──────────────────────────────────── */}
