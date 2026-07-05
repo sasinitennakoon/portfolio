@@ -131,8 +131,11 @@ export default function WorkPage() {
                     {platformIcon[f as Platform]}
                   </span>
                 )}
-                {f === "All" ? "All projects" : `${f} design`}
-                <span
+{f === "All"
+  ? "All projects"
+  : f === "Graphic Design"
+  ? "Graphic Design"
+  : `${f} design`}                <span
                   className={`text-[11px] px-1.5 py-0.5 rounded-full font-medium ${
                     isActive
                       ? "bg-white/20 text-white"

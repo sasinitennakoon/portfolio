@@ -55,7 +55,7 @@ export const graphicProjects: GraphicProject[] = [
     tools: [ "Adobe Photoshop"],
     year: "2026",
 
-    heroImage: "/graphics/hero.jpeg",
+    heroImage: "/graphics/hero2.jpeg",
 
     overview: `<p>Imagic Creation is a creative production house specializing in video production, photography, editing, graphic design, UI/UX design, and web development. This project involved designing a cohesive set of marketing assets to strengthen the brand's visual identity across both digital and print platforms.</p><br><p>The deliverables included Instagram promotional posts, a business card, and Facebook and LinkedIn cover banners, all designed with a consistent visual style to enhance brand recognition and create a professional impression.</p>`,
 
