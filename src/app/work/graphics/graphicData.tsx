@@ -134,7 +134,7 @@ export const graphicProjects: GraphicProject[] = [
     reflection: `<p>The final result is a cohesive premium brand identity that demonstrates how a consistent visual system can strengthen product recognition and communicate brand values. The project showcases branding, packaging, typography, layout, and print design skills while presenting a complete identity suitable for a modern specialty coffee brand.</p>`,
   },
   {
-    slug: "deisgnfest2026",
+    slug: "designfest2026",
     title: "DesignFest Colombo 2026 – Event Branding & Marketing Campaign",
     category: "Event Branding",
     client: "Self-Initiated Concept Project",
