@@ -126,7 +126,7 @@ export const graphicProjects: GraphicProject[] = [
           "/graphics/coffee/Apron.jpeg",
           "/graphics/coffee/cap.jpeg",
           "/graphics/coffee/shirt.jpeg",
-          "/graphics/coffee/cup.jpeg",
+          "/graphics/coffee/Cup.jpeg",
         ],
       },
     ],
