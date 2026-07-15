@@ -12,7 +12,7 @@ const Divider = () => (
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-white dark:bg-neutral-950 pt-24">
+    <main className="min-h-screen bg-white dark:bg-neutral-950 pt-18">
       <Hero />
       <Divider />
       <FeaturedWork />

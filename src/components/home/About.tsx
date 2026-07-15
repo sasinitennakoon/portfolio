@@ -73,8 +73,8 @@ export default function About() {
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-4 -right-4 md:right-auto md:-left-4 bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 rounded-xl px-4 py-3 shadow-sm">
-              <p className="text-[11px] text-neutral-400 dark:text-neutral-500 mb-0.5">Currently</p>
-              <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">UI/UX Designer-Intern</p>
+              <p className="text-[11px] text-neutral-400 dark:text-neutral-500 mb-0.5">Actively seeking</p>
+              <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100"> Junior/Associate UI/UX roles</p>
               <div className="flex items-center gap-1.5 mt-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-[11px] text-emerald-500 font-medium">Available for work</span>
@@ -145,7 +145,7 @@ export default function About() {
         <div className="w-full h-px bg-neutral-100 dark:bg-neutral-800/60 mb-20" />
 
         {/* What I focus on + Design approach side by side */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-14">
 
           {/* Focus areas */}
           <div>
@@ -162,20 +162,7 @@ export default function About() {
             </ul>
           </div>
 
-          {/* Design approach */}
-          <div>
-            <h3 className="text-m font-medium tracking-widest uppercase text-[#023581] dark:text-[#4d7fd4] mb-6">
-              Design approach
-            </h3>
-            <div className="pl-5 border-l-2 border-[#EEF4FF] dark:border-[#023581]/40">
-              <p className="text-base md:text-lg text-neutral-900 dark:text-neutral-100 leading-relaxed mb-4">
-                I focus on clarity over complexity.
-              </p>
-              <p className="text-base md:text-lg text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                Every design decision I make is guided by usability, hierarchy, and user behavior-ensuring interfaces feel natural, efficient, and purposeful.
-              </p>
-            </div>
-          </div>
+          
         </div>
 
       </div>

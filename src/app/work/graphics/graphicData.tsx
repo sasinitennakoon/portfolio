@@ -6,7 +6,10 @@ export type GraphicCategory =
   | "Social Media"
   | "Packaging"
   | "Print"
-  | "Illustration";
+  | "Illustration"
+  | "Graphic Design"
+  | "Marketing Campaign"
+  | "Event Branding";
 
 export interface ColorSwatch {
   hex: string;
@@ -28,7 +31,7 @@ export interface FinalDesignSet {
 export interface GraphicProject {
   slug: string;
   title: string;
-  category: GraphicCategory;
+  category: string;
   client: string;
   role: string;
   tools: string[];
@@ -129,5 +132,84 @@ export const graphicProjects: GraphicProject[] = [
     ],
 
     reflection: `<p>The final result is a cohesive premium brand identity that demonstrates how a consistent visual system can strengthen product recognition and communicate brand values. The project showcases branding, packaging, typography, layout, and print design skills while presenting a complete identity suitable for a modern specialty coffee brand.</p>`,
+  },
+  {
+    slug: "deisgnfest2026",
+    title: "DesignFest Colombo 2026 – Event Branding & Marketing Campaign",
+    category: "Event Branding",
+    client: "Self-Initiated Concept Project",
+    role: "Graphic Designer",
+    tools: [ "Adobe Photoshop","Adeobe Illusrator"],
+    year: "2026",
+
+    heroImage: "/graphics/2026/hero.jpg",
+
+    overview: `<p>DesignFest Colombo 2026 is a conceptual branding project created to showcase a complete visual identity system for a large-scale creative conference. The project simulates a real-world design brief where a cohesive brand experience is developed across multiple marketing and event touchpoints.</p><br><p>The objective was to create a modern, energetic, and professional event identity that appeals to designers, creative professionals, students, and industry leaders while maintaining consistency across both digital and print media.</p>`,
+
+    colorPalette: [
+      { hex: "#111827", name: "Dark" },
+      { hex: "#6d28d9", name: "Purple" },
+      { hex: "#2563eb", name: "Blue" },
+      { hex: "#ffffff", name: "White" },
+      { hex: "#05378c", name: " Navy blue" },
+    ],
+
+    typography: [
+      { name: "Poppins", usage: "Headings and Special Texts", sample: "Aa Bb Cc" },
+      { name: "Calibri", usage: "Body text", sample: "Aa Bb Cc" },
+    ],
+
+
+    finalDesigns: [
+      
+      // Labeled set — with heading + description
+      {
+        heading: "Logo",
+        description: "Designed the official logo concept for DesignFest Colombo 2026, focusing on creating a distinctive visual mark that represents creativity, innovation, and the design community. Developed a memorable identity system with consideration for scalability across digital platforms, print materials, and event applications.",
+        images: [
+          "/graphics/2026/logo.jpeg",
+        ],
+      },
+      {
+        heading: "Instagram Post and Story",
+        description: "Designed promotional Instagram posts and stories for DesignFest Colombo 2026 to create event awareness and audience engagement. Applied the event’s visual identity, typography, and graphic elements to deliver clear, attractive, and consistent social media communication.",
+        images: [
+          "/graphics/2026/Design.jpeg",
+        ],
+      },
+      {
+        heading: "Facebook & LinkedIn Cover Banners",
+        description: "Created social media cover banners for DesignFest Colombo 2026, adapting the event branding into wide-format layouts suitable for different platforms while maintaining strong visual hierarchy, brand consistency, and professional presentation.",
+        images: [
+          "/graphics/2026/fb cover.jpg",
+          "/graphics/2026/linkedin.jpg",
+        ],
+      },
+      {
+        heading: "X Stand Banner",
+        description: "Designed an X stand banner for DesignFest Colombo 2026 as a portable event marketing display. Created a visually impactful vertical layout with clear event information, strong branding elements, and optimized typography for effective visibility in physical event spaces.",
+        images: [
+          "/graphics/2026/X-banner.jpg",
+        ],
+      },
+      {
+        heading: "Backdrop and LED Wall Backdrop",
+        description: "Designed large-scale event visuals including stage backdrops and LED wall graphics for DesignFest Colombo 2026. Developed impactful layouts that enhance the event atmosphere while ensuring clear brand visibility across physical and digital displays.",
+        images: [
+          "/graphics/2026/bigscreen.jpg",
+          "/graphics/2026/backdrop.jpg",
+        ],
+      },
+      {
+        heading: "ID Cards",
+        description: " Designed event identification cards for DesignFest Colombo 2026, including organizer, and media crew passes. Created a clear and functional badge system using consistent branding, color coding, and visual hierarchy to improve identification and enhance the overall event experience.",
+        images: [
+          "/graphics/2026/all.jpg",
+          "/graphics/2026/media.jpg",
+        ],
+      },
+    ],
+
+    reflection: `<p>This project strengthened my ability to develop a complete event branding system rather than designing individual marketing materials in isolation. It challenged me to maintain visual consistency across multiple formats while adapting layouts for different applications, from social media graphics to printed event collateral.</p><p>Through this project, I further developed my skills in branding, typography, editorial design, print production, and campaign thinking, gaining a deeper understanding of how a unified visual identity enhances user experience and brand recognition.</p>`,
   },
 ];

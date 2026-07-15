@@ -19,7 +19,7 @@ export interface Project {
   pageCover: string;
   href: string;
   slug: string;
-  projectType: "Case Study" | "Assessment" | "Freelance";
+  
   
 
   // Meta strip
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     pageCover: "/imagic/cover.jpg",
     href: "/work/imagic-creation",
     slug: "imagic-creation",
-    projectType: "Freelance",
+    
 
     role: "UI/UX Designer & Developer",
     tools: ["Figma", "Next.js","Tailwind CSS","Strapi"],
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     problem:
       "Despite producing strong creative work, Imagic Creation faced key digital challenges that limited its online growth::<br><ul><li>Visitors had no clear and structured way to explore past projects</li><li>The brand lacked a strong online presence to build trust with potential clients</li><li>Service offerings were not communicated in a clear and structured way</li><li>Content updates required technical assistance, making management inefficient</li><li>Social media traffic was not effectively converted into client inquiries</li><ul><p>In addition, many production house websites in the industry tend to:</p><ul><li>Over-prioritize visuals at the expense of usability</li><li>Or become overly complex, making content management difficult</li></ul><p>This created a clear need for a solution that balances:<b>visual storytelling, usability, and long-term maintainability.</b></p>",
     goal:
-      "<p>The primary goal of this project was to design and develop a website that:<p><ul><li>CClearly showcases Imagic Creation’s portfolio and creative work</li><li>Strengthens brand identity through a cinematic digital experience</li><li>Improves navigation and content structure for better usability</li><li>Enables easy content management through a CMS (Strapi)</li><li>Ensures a fully responsive and high-performance experience across devices</li><li>Encourages user engagement and increases client inquiries</li></ul>",
+      "<p>The primary goal of this project was to design and develop a website that:<p><ul><li>Clearly showcases Imagic Creation’s portfolio and creative work</li><li>Strengthens brand identity through a cinematic digital experience</li><li>Improves navigation and content structure for better usability</li><li>Enables easy content management through a CMS (Strapi)</li><li>Ensures a fully responsive and high-performance experience across devices</li><li>Encourages user engagement and increases client inquiries</li></ul>",
     research:
       "<p>To understand expectations for creative production websites, I analyzed industry-leading production house and creative agency websites.</p><br><p><b>Key Observations</b></p><ul><li>First impressions are strongly influenced by hero visuals and motion design</li><li>Users prefer quick access to portfolio content rather than long text-heavy pages</li><li>Minimal content with strong visual storytelling improves engagement</li><li>Poor navigation and structure significantly increase user drop-off</li></ul><br><p><b>UX Insights</b></p><ul><li>Visual hierarchy plays a critical role in guiding attention in creative websites</li><li>Performance is essential, especially when handling large media assets</li><li>Users tend to scan content quickly, requiring clear structure and prioritization</li><li>Trust is built through consistency, clarity, and professional presentation</li></ul><br><p>These insights guided the design direction toward a clean, cinematic, and user-focused experience that prioritizes both storytelling and usability.</p>",
     targetUsers:
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     pageCover: "/vithursha/cover.jpeg",
     href: "/work/vithursha-blog",
     slug: "vithursha-blog",
-    projectType: "Freelance",
+    
 
     role: "UI/UX Designer & Developer",
     tools: ["Figma", "Notion", "Next.js","Tailwind CSS","Strapi"],
@@ -163,7 +163,7 @@ export const projects: Project[] = [
     pageCover: "/shirohana/cover.jpeg",
     href: "/work/shirohana-villa",
     slug: "shirohana-villa",
-    projectType: "Assessment",
+    
 
     role: "UX/UI Designer",
     tools: ["Figma"],
@@ -194,7 +194,7 @@ export const projects: Project[] = [
         "Difficulty finding pricing, availability, or contact options",
         "Lack of high-quality images to understand the actual experience",
       ],
-      quote: "If I have to create an account just to buy one thing, I'll just go somewhere else.",
+      quote: "Before I book anywhere, I want to see real photos of the property, know exactly where it is, and get a sense of what it's actually like to stay there — not just a nice description.",
     },
     wireframes:
       "",
@@ -219,7 +219,7 @@ export const projects: Project[] = [
     pageCover: "/eco/cover.jpg",
     href: "/work/eco-shopper-redesign",
     slug: "eco-shopper-redesign",
-    projectType: "Case Study",
+    
 
     role: "Design Systems Lead",
     tools: ["Figma", "Storybook", "Zeroheight"],
@@ -233,7 +233,7 @@ export const projects: Project[] = [
     goal:
       "<p>The goal of the redesign was to:</p><br><ul><li>Improve usability and navigation</li><li>Establish a clear visual hierarchy</li><li>Enhance consistency across screens</li><li>Create a more modern and user-friendly interface</li></ul>",
     research:
-      "I audited all 12 modules, catalogued every unique component variant, and interviewed 6 product designers and 4 engineers about their biggest workflow pain points. The audit identified 84 reusable component patterns.",
+      "This project started as an app I designed independently during university, covering eco-friendly products across clothing, electronics, groceries, and household items. At the time, I hadn't yet built it around a proper design system or wireframing process — it was more visual exploration than structured UX work. For this redesign, I first went back through the original version myself and identified where the structure broke down — inconsistent components, unclear navigation, and screens that didn't follow any repeatable pattern. To rebuild it properly, I referenced the Keells app (a familiar local grocery/retail app with an established multi-category structure) to understand how it handles navigation across product categories, and looked through Behance and Dribbble for how other designers approach sustainable/eco-commerce product interfaces and visual language. This gave me a clearer benchmark for organizing multiple product categories under one consistent system, which shaped the component structure and navigation in the redesign",
     targetUsers:
       "<p>The target audience includes environmentally conscious consumers who prefer sustainable and eco-friendly products. These users are typically familiar with mobile shopping apps and expect a smooth, efficient, and intuitive shopping experience.</p><p>The design also considers users who value quick navigation, clear product information, and a seamless checkout process, ensuring they can browse and purchase products with minimal effort.</p>",
     userPersona: {
@@ -276,7 +276,7 @@ export const projects: Project[] = [
     pageCover: "/event/cover.jpg",
     href: "/work/event-desk",
     slug: "event-desk",
-    projectType: "Assessment",
+    
 
     role: "UI/UX Designer",
     tools: ["Figma","Miro"],
@@ -333,8 +333,7 @@ export const projects: Project[] = [
     pageCover: "/dinuka/cover.jpeg",
     href: "/work/dinuka-portfolio",
     slug: "dinuka-portfolio",
-    projectType: "Freelance",
-
+    
     role: "UI/UX Designer & Developer",
     tools: ["Figma","Next.js","Tailwind css"],
     figmaLink: "https://www.figma.com/design/SFEHvCNaJUcKLAYJEWEkkl/Dinuka-Gunawardana-Portfolio?node-id=0-1&p=f&t=ZSTng7xqcJO8gYpr-0",
@@ -348,7 +347,7 @@ export const projects: Project[] = [
     goal:
       "<p>The goal was to design a portfolio that:</p><ul><li>Showcases projects in a clear and structured way</li><li>Creates a strong first impression through visual design</li><li>Highlights skills and experience effectively</li><li>Provides smooth and intuitive navigation</li></ul>",
     research:
-      "To ground my design decisions, I reviewed competitor platforms such as Eventbrite and Meetup to understand how existing tools display event data and attendee information. From this, I identified that organizers value the ability to access a quick performance overview, browse and filter events efficiently, and dive into detailed event-level data such as ticket sales and attendee lists. I also noted that demographic and engagement insights are critical for marketing and planning. With these needs in mind, I focused on clarity, reusability, and scalability, applying a consistent design system with reusable components such as cards, charts, buttons, and input fields",
+      "Since this project was a personal portfolio for a visual artist, the goal was to design something that works for two different audiences at once — potential clients evaluating his work, and potential employers assessing his skill and professionalism.I looked at a mix of sources to figure out how to serve both: Behance and Dribbble for how designers and visual artists structure image-heavy portfolios, along with a few real photographer/videographer portfolio sites to see how they balance large-scale visual work with enough context (project info, credits, process) to read as professional rather than just a gallery. Across these references, the strongest ones let the imagery lead while still making it easy to find contact info and project context quickly — which became the core design direction for Dinuka's site: visuals first, information architecture kept minimal and out of the way",
     targetUsers:
       "<p>The target audience includes recruiters, potential clients, and collaborators who are looking to quickly evaluate Dinuka’s skills, experience, and design capabilities.</p><p>These users typically spend a short amount of time reviewing portfolios, so the design focuses on clarity, strong visual hierarchy, and easy access to key information.</p>",
     userPersona: {

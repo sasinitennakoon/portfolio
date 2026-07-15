@@ -46,11 +46,7 @@ const platformIcon: Record<Platform, React.ReactNode> = {
   ),
 };
 
-const typeStyles = {
-  "Case Study": "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300",
-  "Assessment": "bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-300",
-  "Freelance": "bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-300",
-};
+
 
 const filters: Filter[] = ["All", "Mobile", "Web", "Web & Mobile", "Graphic Design"];
 
@@ -200,11 +196,7 @@ export default function WorkPage() {
                   {project.description}
                 </p>
                 <div className="flex items-center justify-between mt-5 pt-4 border-t border-neutral-100 dark:border-neutral-800">
-                  <span
-                    className={`text-[11px] px-2.5 py-0.5 rounded-full font-medium ${typeStyles[project.projectType]}`}
-                  >
-                    {project.projectType}
-                  </span>
+                  
                   <span className="flex items-center gap-1 text-sm font-medium text-[#023581] dark:text-[#4d7fd4] group-hover:gap-2 transition-all duration-200">
                     View
                     <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

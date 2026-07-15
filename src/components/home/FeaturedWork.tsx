@@ -11,19 +11,19 @@ interface Project {
   year: string;
   cover: string;
   href: string;
-  projectType: "Case Study" | "Assessment" | "Freelance";
+  
 }
 
 const projects: Project[] = [
   {
     title: "Imagic Creation - Production House Website Design",
     description: "A high-impact production house website designed and developed to showcase cinematic work, strengthen brand identity, and convert visitors into potential clients through a visually immersive experience.",
-    tags: ["UI Design", "Under Development"],
+    tags: ["UI Design", "Design Systems"],
     platform: "Web",
     year: "2026",
     cover: "/imagic.jpg",
     href: "/work/imagic-creation",
-    projectType: "Freelance",
+    
   },
   {
     title: "Vithursha Kamaleswaran-Personal Blog Publishing Site",
@@ -33,7 +33,7 @@ const projects: Project[] = [
     year: "2025",
     cover: "/front2.jpeg",
     href: "/work/vithursha-blog",
-    projectType: "Freelance",
+    
   },
   {
     title: "Shirohana Villa-Home Page Design",
@@ -43,7 +43,7 @@ const projects: Project[] = [
     year: "2025",
     cover: "/Shirohana.jpeg",
     href: "/work/shirohana-villa",
-    projectType: "Assessment",
+    
   },
 ];
 
@@ -75,11 +75,7 @@ const platformIcon: Record<Platform, React.ReactNode> = {
 };
 
 // ✅ typeStyles defined here — outside the component, at the top level
-const typeStyles: Record<Project["projectType"], string> = {
-  "Case Study": "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300",
-  "Assessment": "bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-300",
-  "Freelance":  "bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-300",
-};
+
 
 export default function FeaturedWork() {
   return (
@@ -174,9 +170,7 @@ export default function FeaturedWork() {
 
                 {/* Footer */}
                 <div className="flex items-center justify-between mt-5 pt-4 border-t border-neutral-100 dark:border-neutral-800">
-                  <span className={`text-[11px] px-2.5 py-0.5 rounded-full font-medium ${typeStyles[project.projectType]}`}>
-                    {project.projectType}
-                  </span>
+                  
                   <span className="flex items-center gap-1 text-sm font-medium text-[#023581] dark:text-[#4d7fd4] group-hover:gap-2 transition-all duration-200">
                     View
                     <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
