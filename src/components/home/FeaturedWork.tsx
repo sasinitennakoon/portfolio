@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export type Platform = "Mobile" | "Web" | "Desktop" | "Web & Mobile";
+export type Platform = "Mobile" | "Web" | "Desktop" | "Web & Mobile" | "Graphic Design";
 
 interface Project {
   title: string;
@@ -26,23 +26,23 @@ const projects: Project[] = [
     
   },
   {
-    title: "Vithursha Kamaleswaran-Personal Blog Publishing Site",
-    description: "A content-focused blog platform designed to deliver a clean reading experience with strong visual hierarchy and easy navigation.",
-    tags: ["UX Research", "UI Design"],
-    platform: "Web",
-    year: "2025",
-    cover: "/front2.jpeg",
-    href: "/work/vithursha-blog",
+    title: "Eco Shopper – Mobile App Redesign",
+    description: "A redesign of an e-commerce mobile app focused on improving usability, visual consistency, and overall user experience",
+    tags: ["Redesign Project", "UI Design"],
+    platform: "Mobile",
+    year: "2026",
+    cover: "/eco.jpeg",
+    href: "/work/eco-shopper-redesign",
     
   },
   {
-    title: "Shirohana Villa-Home Page Design",
-    description: "A responsive homepage design for a luxury villa, focused on creating a visually engaging and seamless booking experience across web and mobile platforms.",
-    tags: ["UX Design", "Usability Testing"],
-    platform: "Web & Mobile",
-    year: "2025",
-    cover: "/Shirohana.jpeg",
-    href: "/work/shirohana-villa",
+    title: "DesignFest Colombo 2026 – Event Branding & Marketing Campaign",
+    description: "A complete event branding project showcasing a unified visual identity through promotional materials, print collateral, and digital marketing assets for a creative design conference.",
+    tags:  [ "Adobe Photoshop","Adeobe Illusrator"],
+    platform: "Graphic Design",
+    year: "2026",
+    cover: "/graphics/2026/hero.jpg",
+    href: "/work/graphics/designfest2026",
     
   },
 ];
@@ -70,6 +70,14 @@ const platformIcon: Record<Platform, React.ReactNode> = {
     <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <rect x="5" y="2" width="9" height="14" rx="1.5" />
       <rect x="14" y="5" width="8" height="11" rx="1.5" />
+    </svg>
+  ),
+   "Graphic Design": (
+    <svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.2 0-.9.7-1.5 1.5-1.5H16a4 4 0 0 0 4-4c0-5.5-4.5-10-8-10Z" />
+      <circle cx="7.5" cy="10.5" r="1" fill="currentColor" stroke="none" />
+      <circle cx="10.5" cy="7" r="1" fill="currentColor" stroke="none" />
+      <circle cx="15" cy="8" r="1" fill="currentColor" stroke="none" />
     </svg>
   ),
 };

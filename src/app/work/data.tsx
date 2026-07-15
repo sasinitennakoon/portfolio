@@ -221,7 +221,7 @@ export const projects: Project[] = [
     slug: "eco-shopper-redesign",
     
 
-    role: "Design Systems Lead",
+    role: "UI/UX Designer",
     tools: ["Figma", "Storybook", "Zeroheight"],
     figmaLink: "https://www.figma.com/design/K8inoxfgraFXPOlS0Sh3pj/Eco-Shopper--Redesign-?node-id=1-3367&p=f&t=wZPs4M95dCoEi0r5-0",
     

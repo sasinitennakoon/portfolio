@@ -47,8 +47,8 @@ export default function Hero() {
           {/* Headline */}
           <h1 className="font-serif text-5xl md:text-6xl leading-[1.1] tracking-tight text-neutral-900 dark:text-neutral-900 mb-5">
             UI/UX Designer{" "}
-            <span className="italic text-[#023581] dark:text-[#023581]">who ships</span>{" "}
-            from research to a live, coded product.
+            <span className="italic text-[#023581] dark:text-[#023581]">with a background</span>{" "}
+           in visual and brand design.
           </h1>
 
           {/* Subheadline */}
