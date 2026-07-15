@@ -208,6 +208,12 @@ export const graphicProjects: GraphicProject[] = [
           "/graphics/2026/media.jpg",
         ],
       },
+      {
+        heading: "T-Shirt",
+        images: [
+          "/graphics/2026/shirt.jpeg",
+        ],
+      },
     ],
 
     reflection: `<p>This project strengthened my ability to develop a complete event branding system rather than designing individual marketing materials in isolation. It challenged me to maintain visual consistency across multiple formats while adapting layouts for different applications, from social media graphics to printed event collateral.</p><p>Through this project, I further developed my skills in branding, typography, editorial design, print production, and campaign thinking, gaining a deeper understanding of how a unified visual identity enhances user experience and brand recognition.</p>`,
