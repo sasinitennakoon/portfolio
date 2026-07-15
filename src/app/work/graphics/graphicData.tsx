@@ -201,7 +201,7 @@ export const graphicProjects: GraphicProject[] = [
         ],
       },
       {
-        heading: "ID Cards",
+        heading: "Event Pass",
         description: " Designed event identification cards for DesignFest Colombo 2026, including organizer, and media crew passes. Created a clear and functional badge system using consistent branding, color coding, and visual hierarchy to improve identification and enhance the overall event experience.",
         images: [
           "/graphics/2026/all.jpg",
