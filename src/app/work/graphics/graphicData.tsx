@@ -212,6 +212,7 @@ export const graphicProjects: GraphicProject[] = [
         heading: "T-Shirt",
         images: [
           "/graphics/2026/shirt.jpeg",
+          "/graphics/2026/shirt2.jpeg",
         ],
       },
     ],
