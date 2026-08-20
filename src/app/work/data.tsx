@@ -58,7 +58,7 @@ export const projects: Project[] = [
     tags: ["UX Research", "UI Design","Development"],
     platform: "Web",
     year: "2026",
-    cover: "/imagic.jpg",
+    cover: "/imagic3.jpg",
     pageCover: "/imagic/cover.jpg",
     href: "/work/imagic-creation",
     slug: "imagic-creation",

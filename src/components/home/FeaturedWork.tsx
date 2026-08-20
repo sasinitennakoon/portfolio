@@ -21,7 +21,7 @@ const projects: Project[] = [
     tags: ["UI Design", "Design Systems"],
     platform: "Web",
     year: "2026",
-    cover: "/imagic.jpg",
+    cover: "/imagic3.jpg",
     href: "/work/imagic-creation",
     
   },
